@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <title>Final Project</title>
+  <style>
+    #container {
+      margin-left: 500px;
+      margin-right: 500px;
+    }
+
+    body {
+      background-color: red
+    }
+
+    #sub {
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      float: right;
+    }
+
+    #title {
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 align="center" id="title">English Premier League</h1>
+
+  <div id="container" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#container" data-slide-to="0" class="active"></li>
+      <li data-target="#container" data-slide-to="1"></li>
+      <li data-target="#container" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="chelsea.html">
+          <img class="d-block w-100" src="https://www.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png"
+            alt="First slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="mu.html">
+          <img class="d-block w-100" src="https://www.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png"
+            alt="Second slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="liverpool.html">
+          <img class="d-block w-100" src="https://www.thesportsdb.com/images/media/team/badge/uvxuqq1448813372.png"
+            alt="Third slide">
+        </a>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#container" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#container" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <button type="button" id="sub" class="btn btn-primary" data-toggle="modal" data-target="#formModal">Subscride</button>
+
+  <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="https://formspree.io/mfaisalakbar93@gmail.com">
+            <div class="form-group">
+              <label for="your-name" class="col-form-label">Name :</label>
+              <input type="text" name="name" class="form-control" id="your-name" />
+            </div>
+            <div class="form-group">
+              <label for="your-email" class="col-form-label">Email :</label>
+              <input type="email" name="email" class="form-control" id="your-email" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    const element = document.querySelector('#sub')
+    element.classList.add('animated', 'heartBeat')
+
+    const element2 = document.querySelector('#title')
+    element2.classList.add('animated', 'tada')
+  </script>
+</body>
+
+</html>
